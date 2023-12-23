@@ -47,27 +47,23 @@ def total_pizza_order():
     # Add pizza cost by size to final_total
     if pizza_size == "s":
         final_total += small
-    if pizza_size == "m":
+    elif pizza_size == "m":
         final_total += medium
-    if pizza_size == "l":
+    elif pizza_size == "l":
         final_total += large
     else: 
         pass
         
     # Add topping(pepperoni) to final_total
     if adding_pepperoni == "y": 
-        if pizza_size == "s" and adding_pepperoni == "y":
+        if pizza_size == "s":
             final_total += small_pep
-        if (pizza_size == "m" or pizza_size == "l") and adding_pepperoni == "y":
+        else: 
             final_total += large_medium_pep
-    else: 
-        pass
 
     # Adding extra cheese
     if Add_extra_cheese == "y": 
         final_total += x_cheese
-    else: 
-        pass
 
     # Format grand total output
     grand_total = "{:.2f}".format(final_total)
