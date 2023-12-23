@@ -94,7 +94,6 @@ def total_pizza_order():
 
     return grand_total
 
-
 # Print the grand total with currency formatting 
 print(f"Thank you for choosing Danknee's Pizza! Your final bill is: ${total_pizza_order()}.") 
 
