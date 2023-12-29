@@ -4,7 +4,6 @@
 import random
 
 # CONSTANT VARIABLES
-
 band_name_generator_banner = """
  ######                          #     #                          #####                                                         
  #     #   ##   #    # #####     ##    #   ##   #    # ######    #     # ###### #    # ###### #####    ##   #####  ####  #####  
@@ -21,6 +20,9 @@ band_name_adjectives = ['dirty', 'smelly', 'crazy', 'wild']
 # FUNCTION FOR BAND NAME GENERATOR
 def band_name_generator():
 
+    # WELCOME BANNER
+    print(band_name_generator_banner)
+    
     # USER INPUT - STREET NAME
     city_name = input("What city did you grow up in?\n")
 
