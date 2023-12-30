@@ -35,7 +35,7 @@ def band_name_generator():
     # CONCATENATE BAND NAME
     return (f"Your new bands name is {random.choice(band_name_adjectives)} {city_name} {pet_name}.")
 
-# CALL YOUR FUNCTION
+# CALL YOUR FUNCTION 
 print(band_name_generator())
     
 
