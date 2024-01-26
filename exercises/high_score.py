@@ -12,3 +12,5 @@ def highest_score():
 
 # Output
 print(f"The highest score in the class is: {highest_score()}")
+
+
